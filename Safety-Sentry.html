@@ -170,11 +170,11 @@
             let statusColorClass;
 
             if (uniqueCount === 0) {
-                statusText = 'YES (Clear)';
+                statusText = 'CLEAN: No Sensitive Keywords Found';
                 statusColorClass = 'text-safe';
                 safetyCardEl.classList.add('border-safe', 'bg-green-50');
             } else {
-                statusText = 'NO (Sensitive Content Detected)';
+                statusText = 'UNSAFE: Sensitive Content Detected!';
                 statusColorClass = 'text-unsafe';
                 safetyCardEl.classList.add('border-unsafe', 'bg-red-50');
             }
@@ -215,4 +215,5 @@
 
 </body>
 </html>
+
 
